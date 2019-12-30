@@ -11,10 +11,32 @@
     <main class="page">
         <section class="menu"></section>
         <header>
-            <img src="assets/images/header.svg" alt="">
+            <div class="photo">
+                <!-- <img src="images/photo-small.jpg"
+                     srcset="assets/images/photo-big.jpg 2000w,
+                            assets/images/photo-small.jpg 1000w"
+                     sizes="(min-width: 960px) 960px,
+                            100vw"
+                     alt=""> -->
+                <picture>
+                    <source media="(min-width: 401px)"
+                        srcset="assets/images/photo-big.jpg" />
+                    <source media="(max-width: 400px)"
+                        srcset="assets/images/photo-tall.jpg" />
+                    <img src="assets/images/photo-small.jpg" />
+                </picture>
+            </div>
         </header>
         <section class="content">
-            <img src="assets/images/content.svg" alt="">
+            <!-- <img src="assets/images/content.svg" alt=""> -->
+            <div class="illustration">
+                <img src="assets/images/illustration-small.png"
+                srcset="assets/images/illustration-small.png 1x,
+                        assets/images/illustration-big.png 2x"
+                alt="Illustration" style="max-width: 500px;">
+            </div>
+            <!-- <img class="illustration" src="assets/images/illustration-big.png"
+            alt="Illustration" style="max-width: 500px;"> -->
         </section>
         <section class="sign-up">
             <img src="assets/images/sign-up.svg" alt="">

@@ -21,6 +21,12 @@ section, header {
     align-items: center;
 }
 
+header {
+    height: auto;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
 .menu {
     background-color: #5995DA;
     height: 80px;
@@ -28,8 +34,18 @@ section, header {
 
 .content {
     background-color: #EAEDF0;
-    height: 600px;
+    height: 600px
 }
+
+.illustration img {
+    display: block;
+    width: 100%;
+}
+
+/* .illustration {
+    width: 100%;
+
+} */
 
 .sign-up { background-color: #D6E9FE; }
 
